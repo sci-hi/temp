@@ -1,0 +1,1547 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Toledo City Science High School</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- ==========================================
+         LOADING SCREEN
+    =========================================== -->
+
+    <div id="loading-screen">
+      <!-- Replace this image with your own logo -->
+      <img
+        src="asset/logo.png"
+        alt="Student Wellness Hub Logo"
+        id="loading-logo"
+      />
+
+      <div class="loading-bar-container">
+        <div id="loading-bar"></div>
+      </div>
+
+      <p id="loading-text">Loading... 0%</p>
+    </div>
+
+    <!-- ==========================================
+         WEBSITE
+    =========================================== -->
+
+    <div id="website">
+      <!-- ======================================
+             SHARED NAVIGATION
+        ======================================= -->
+
+      <header class="navbar">
+        <button class="logo-button" data-navigate="home">
+          <img src="asset/logo.png" alt="Logo" />
+
+          <span> TCSHS Hub </span>
+        </button>
+
+        <button id="menu-button" class="menu-button" aria-label="Open menu">
+          &#9776;
+        </button>
+
+        <nav id="navigation">
+          <button data-navigate="home">Home</button>
+
+          <button data-navigate="mental-health">About</button>
+
+          <button data-navigate="stress-relief">Activities</button>
+
+          <button data-navigate="study-stress">Milestones</button>
+
+          <button data-navigate="calm-zone">Location</button>
+
+          <button data-navigate="help-support">Contact</button>
+        </nav>
+      </header>
+
+      <!-- ======================================
+             PAGE SYSTEM
+
+             ONLY ONE OF THESE IS VISIBLE AT A TIME
+        ======================================= -->
+
+      <main id="page-container">
+        <!-- ==================================
+                 HOME PAGE
+            =================================== -->
+
+        <div class="website-page active" id="page-home">
+          <section class="home-page">
+            <div class="home-content">
+              <p class="eyebrow">
+                TCSHS: Exaltatus Fueres; Soar High, Sci-High!
+              </p>
+
+              <h1>TCSHS School Hub</h1>
+
+              <p class="home-description">
+                A welcoming, student-centered environment that encourages curiosity, critical thinking, and a passion for science &mdash; where students can learn, explore, discover, and prepare for a brighter future.
+              </p>
+
+              <div class="home-buttons">
+                <button class="primary-button" data-navigate="mental-health">
+                  Explore Toledo City Science High School
+                </button>
+
+                <button class="secondary-button" data-navigate="calm-zone">
+                  Visit the Location
+                </button>
+              </div>
+            </div>
+
+            <div class="home-features">
+              <button class="home-feature" data-navigate="mental-health">
+                <span>
+                  <img src="asset/logo.png" alt="" />
+                </span>
+
+                <div>
+                  <h3>ABOUT TCSHS</h3>
+
+                  <p>
+                    Simple, reliable information on Toledo City Science High School.
+                  </p>
+                </div>
+              </button>
+
+
+              <button class="home-feature" data-navigate="stress-relief">
+                <span>
+                  <img src="asset/logo.png" alt="" />
+                </span>
+
+                <div>
+                  <h3>ACTIVITIES</h3>
+
+                  <p>Ongoing events/activities happening on the school.</p>
+                </div>
+              </button>
+
+              <button class="home-feature" data-navigate="study-stress">
+                <span>
+                  <img src="asset/logo.png" alt="" />
+                </span>
+
+                <div>
+                  <h3>MILESTONES &amp; ACHIEVEMENTS</h3>
+
+                  <p>Practical tips for managing academic pressure.</p>
+                </div>
+              </button>
+
+              <button class="home-feature" data-navigate="calm-zone">
+                <span>
+                  <img src="asset/logo.png" alt="" />
+                </span>
+
+                <div>
+                  <h3>TCSHS LOCATION</h3>
+
+                  <p>A quiet space to pause, breathe, and reset.</p>
+                </div>
+              </button>
+
+              <button class="home-feature" data-navigate="help-support">
+                <span>
+                  <img src="asset/logo.png" alt="" />
+                </span>
+
+                <div>
+                  <h3>CONTACT &amp; SUPPORT</h3>
+
+                  <p>Know where and how to reach out when you need it.</p>
+                </div>
+              </button>
+
+              
+            </div>
+          </section>
+        </div>
+
+        <!-- ==================================
+                 MENTAL HEALTH PAGE
+            =================================== -->
+
+        <div class="website-page" id="page-mental-health">
+          <section class="content-page">
+            <div class="page-introduction">
+              <p class="eyebrow">LEARN</p>
+
+              <h1>Toledo City Science High School Information Hub</h1>
+
+              <p>
+                Simple and reliable information about Toledo City Science High School. Select a
+                topic to read more.
+              </p>
+            </div>
+
+            <!-- MENTAL HEALTH REFERENCE ENTRIES -->
+
+            <div class="wellness-list">
+              <details class="wellness-entry">
+                <summary>
+                  <span class="wellness-entry-icon">
+                    <img src="asset/logo.png" />
+                  </span>
+                  <span class="wellness-entry-heading">
+                    <span class="wellness-entry-title">History</span>
+                    <span class="wellness-entry-subtitle">
+                      
+                    </span>
+                  </span>
+                  <span class="wellness-entry-arrow">&#8250;</span>
+                </summary>
+
+                <div class="wellness-entry-body">
+                  <div class="wellness-field">
+                    <h2>TCSHS Through the Years
+</h2>
+                  
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Foundation and Development</h3>
+                    <p>Toledo City Science High School was established to provide science-oriented secondary education for learners in Toledo City and nearby communities.</p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Academic Growth</h3>
+                    <p>The school developed an academic environment emphasizing science, mathematics, research, and other areas of learning.</p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Student Development</h3>
+                    <p>As the school developed, students became involved in academic competitions, research activities, organizations, sports, and cultural programs.</p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>TCSHS Today</h3>
+                    <p>TCSHS continues to provide students with opportunities to pursue academic excellence while developing leadership, creativity, scientific inquiry, and service to the community.</p>
+                  </div>
+                </div>
+              </details>
+
+              <details class="wellness-entry">
+                <summary>
+                  <span class="wellness-entry-icon">
+                    <img src="asset/logo.png" />
+                  </span>
+                  <span class="wellness-entry-heading">
+                    <span class="wellness-entry-title">Clubs</span>
+                    <span class="wellness-entry-subtitle">
+                      
+                    </span>
+                  </span>
+                  <span class="wellness-entry-arrow">&#8250;</span>
+                </summary>
+
+                <div class="wellness-entry-body">
+                  <div class="wellness-field">
+                    <h2>School Non-Academic Clubs</h2>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Troubadours</h3>
+                    <p>A club that develops students’ skills and interest in singing and musical performances.</p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Performing Arts</h3>
+                    <p>A club that encourages students to express themselves through dance, theater, music, and other performances.</p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Campus Ministry</h3>
+                    <p>A club that promotes faith, service, values, and spiritual growth among students.</p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Toastmasters</h3>
+                    <p>A club that develops students’ public speaking, communication, and leadership skills.</p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Chess Club</h3>
+                    <p>A club that develops strategic thinking, concentration, and problem-solving through chess.</p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Artist Circle</h3>
+                    <p>A club that encourages creativity and artistic skills through drawing, painting, and other art activities.</p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h2>School Academic Clubs</h2>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Math Club</h3>
+                    <p>A club that strengthens students’ mathematical skills through activities, challenges, and competitions.</p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Science Club</h3>
+                    <p>A club that promotes interest in science through experiments, activities, and scientific competitions.</p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Robotics Club</h3>
+                    <p>A club where students learn robotics, programming, design, and technology through hands-on projects.</p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Research Club</h3>
+                    <p>A club that develops students’ skills in research, investigation, data gathering, and academic writing.</p>
+                  </div>
+                </div>
+              </details>
+
+              <details class="wellness-entry">
+                <summary>
+                  <span class="wellness-entry-icon">
+                    <img src="asset/logo.png" />
+                  </span>
+                  <span class="wellness-entry-heading">
+                    <span class="wellness-entry-title">Organizations</span>
+                    <span class="wellness-entry-subtitle">
+                      
+                    </span>
+                  </span>
+                  <span class="wellness-entry-arrow">&#8250;</span>
+                </summary>
+
+                  <div class="wellness-field">
+                    <h2>Supreme Secondary Learners Government</h2>
+                    <p>A club that develops students’ skills and interest in singing and musical performances.</p>
+                  </div>
+
+                  <div class="wellness-entry-body">   <!-- ADD THIS LINE -->
+                    <div class="wellness-field">
+                    <h3>Core Responsibilities & Initiatives of the SSLG</h3>
+                    <ul>
+                      <li>Student Advocacy: Representing student interests, organizing student-led assemblies, and providing a platform for feedback on school policies or facilities.</li>
+                      <li>Campus Mobilization: Spearheading active student participation in essential annual school activities such as the Brigada Eskwela (school maintenance and preparation).</li>
+                      <li>Safety & Readiness Seminars: Collaborating with localized units to host Disaster Risk Reduction and Management (DRRM) workshops and managing student protocols during (National Simultaneous Earthquake Drills/NSED).</li>
+                      <li>Leadership & Event Coordination: Designing and executing programs for student enrichment, academic mixers, and wellness initiatives that align with the rigorous expectations of the Special Science curriculum.</li>
+                      
+                    </ul>
+                  </div>
+
+                   <div class="wellness-field">
+                    <h3>Structure & Elections</h3>
+                    <p>The organization is managed by an elected executive board of students (including a President, Vice President, Secretary, and Treasurer) who undergo formal campaign and election cycles during the preceding school year. The SSLG operates under the guidance of Ma'am Rezie Kim Rivera, the SSLG's adviser and works in close coordination with the office of the school principal.</p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h2>Youth for Environment in Schools Organization</h2>
+                    <p>The YES-O is the premier student-led environmental organization at TCSHS. It consolidates all ecology-related efforts under a single banner to cultivate a green-conscious campus.</p>
+                    <li>Core Mandate: Established under DepEd Order No. 72, s. 2003, it serves as the official venue for student action toward safeguarding, promoting, and conserving the environment.</li>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h2>Barkada Kontra Bisyo</h2>
+                    <p>The BKD is a peer-based organization focused on advocacy, substance abuse prevention, and promoting healthy student lifestyles.</p>
+                    <ul>
+                      <li>Core Mandate: Institutionalized nationwide through the Dangerous Drugs Board (DDB) and DepEd, the organization leverages the Filipino concept of "barkada" (peer group) to foster a positive, supportive, and drug-free learning environment.</li>
+                      <li>Key Activities: BKD focuses on preventive drug education, mental health awareness, and the productive use of time. They counteract the appeal of risky behaviors by driving alternative, constructive student engagements.</li>
+                    </ul>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h2>The Catalyst</h2>
+                    <p>This is the official English-language student publication of TCSHS. It serves as a platform for campus news, editorial opinions, science and technology features, and community updates.</p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h2>Ang Siklab by The Catalyst</h2>
+                    <p>This is the official Filipino-language student publication of TCSHS. The name "Siklab" translates to "spark" or "blaze," symbolizing the burning passion and voice of the student body.</p>
+                  </div>
+
+                  
+                </div>
+              </details>
+
+              <details class="wellness-entry">
+                <summary>
+                  <span class="wellness-entry-icon">
+                    <img src="asset/logo.png" />
+                  </span>
+                  <span class="wellness-entry-heading">
+                    <span class="wellness-entry-title"
+                      >Strands</span
+                    >
+                    <span class="wellness-entry-subtitle">
+                      
+                    </span>
+                  </span>
+                  <span class="wellness-entry-arrow">&#8250;</span>
+                </summary>
+
+                <div class="wellness-entry-body">
+                  <div class="wellness-field">
+                    <h1>Grade 11 Strengthened Senior High School Curriculum</h1>
+                    
+                  </div>
+
+                  <div class="wellness-field">
+                    <h2>CORE SUBJECTS</h2>
+                    <ul>
+                      <li>Effective Communication</li>
+                      <li>General Mathematics</li>
+                      <li>General Science</li>
+                      <li>Life & Career Skills</li>
+                      <li>Mabisang Komunikasyon</li>
+                      <li>Pag-aaral ng Kasaysayan at Lipunang Pilipino</li>
+                    </ul>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h2>ACADEMIC ELECTIVES</h2>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>ART, SOCIAL SCIENCE & HUMANITIES CLUSTER</h3>
+                    <ul>
+                      <li>Philippine Governance (Philippine Politics and Governance)</li>
+                      <li>Social Sciences (Theory and Practice)</li>
+                      <li>Creative Composition 1</li>
+                      <li>Contemporary Literature 1 </li>
+                      <li>Research 1</li>
+                    </ul>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>BUSINESS AND ENTREPRENEURSHIP CLUSTER</h3>
+                    <ul>
+                      <li>Introduction to Organization and Management</li>
+                      <li>Business Finance</li>
+                      <li>Research 1</li>
+                    </ul>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>SCIENCE, TECHNOLOGY, ENGINEERING, AND MATHEMATICS CLUSTER</h3>
+                    <ul>
+                      <li>Biology 1</li>
+                      <li>Biology 2</li>
+                      <li>Earth & Space Science 1</li>
+                      <li>Earth & Space Science 2</li>
+                      <li>Chemistry 1</li>
+                      <li>Chemistry 2</li>
+                      <li>Finite Mathematics 1</li>
+                      <li>Finite Mathematics 2</li>
+                      <li>Research 1</li>
+                      
+                    </ul>
+                  </div>
+                  <div class="wellness-field">
+                   <h1>Grade 12 Revised K-12 Curriculum</h1>
+                    
+                  </div>
+
+                  <div class="wellness-field">
+                    <h2>ACADEMIC TRACK</h2>
+                    
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>STEM Strand </h3>
+                    <p> (Science, Technology, Engineering and   Mathematics)</p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>HUMSS Strand  </h3>
+                    <p>  (Humanities and Social Sciences) </p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>ABM Strand  </h3>
+                    <p> (Accountancy, Business, and Management)</p>
+                  </div>
+
+                  <div class="wellness-field">
+
+                   <h1>Work Immersion Partners</h1>
+                    
+                  </div>
+
+                  <div class="wellness-field">
+                    <h2>nCase</h2>
+                    <p>Ncase is a digital legal management application designed to help attoneys and aspiring attorneys organize, store and manage legal case files in a single platform.</p>
+                    
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>GMG Law Firm </h3>
+                    <p> Atty. Giovani M. Gil (GMG Law Firm) is a private law firm in Toledo City that provides legal services to people who need help with legal matters. The office is composed of licensed</p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Giolzzi Company</h3>
+                    <p>The GioIzzi Company is a financial service institution that provides different types of loan assistance to individuals and small business owners.</p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>LAMAC</h3>
+                    <p> (Accountancy, Business, and Management)</p>
+                  </div>
+
+                </div>
+              </details>
+
+              
+            </div>
+          </section>
+        </div>
+
+        
+
+        <!-- ==================================
+                 STRESS RELIEF PAGE
+            =================================== -->
+
+        <!-- ==================================
+         STRESS RELIEF PAGE (ACTIVITIES)
+=================================== -->
+
+        <div class="website-page" id="page-stress-relief">
+          <section class="content-page">
+            <div class="page-introduction">
+              <p class="eyebrow">CELEBRATE</p>
+
+              <h1>Annual School Celebrations</h1>
+
+              <p>
+                Activities and events held annually at the school.
+              </p>
+            </div>
+
+            <div class="activity-grid">
+              <button
+                class="activity-card"
+                data-activity="pascilubong"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img src="asset/ms1.jpg" alt="Pascilubong" />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Pascilubong</h2>
+
+                  <p>
+                    A school tradition held annually to warmly welcome new Grade 7 and Grade 11 students.
+                  </p>
+
+                  <span class="activity-card-link">Learn more →</span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card"
+                data-activity="intramurals"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img src="asset/ms2.jpg" alt="Intramurals" />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Intramurals</h2>
+
+                  <p>
+                    An annual sports event that promotes sportsmanship, teamwork, discipline, and camaraderie.
+                  </p>
+
+                  <span class="activity-card-link">Learn more →</span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card"
+                data-activity="olympiad"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img src="asset/ms3.jpg" alt="Olympiad Trails" />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Olympiad Trails</h2>
+
+                  <p>
+                    A series of stationary academic and skill-based challenges that encourage teamwork and critical thinking.
+                  </p>
+
+                  <span class="activity-card-link">Learn more →</span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card"
+                data-activity="teachers-month"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img src="asset/ms4.jpg" alt="Teachers’ Month" />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Teachers’ Month</h2>
+
+                  <p>
+                    Celebrated every October to recognize and appreciate teachers.
+                  </p>
+
+                  <span class="activity-card-link">Learn more →</span>
+                </div>
+              </button>
+
+              
+              <button
+                class="activity-card"
+                data-activity="buwan-ng-wika"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img src="asset/ms5.jpg" alt="Buwan ng Wika" />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Buwan ng Wika</h2>
+
+                  <p>
+                    A month-long celebration of the Filipino language, culture, and national identity.
+                  </p>
+
+                  <span class="activity-card-link">Learn more →</span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card"
+                data-activity="arts-month"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img src="asset/ms7.jpg" alt="Arts Month" />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Arts Month</h2>
+
+                  <p>
+                    A celebration of students’ creativity and artistic talents.
+                  </p>
+
+                  <span class="activity-card-link">Learn more →</span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card"
+                data-activity="nutrition-month"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img src="asset/ms6.jpg" alt="Nutrition Month" />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Nutrition Month</h2>
+
+                  <p>
+                    A health-focused celebration about proper nutrition and healthy living.
+                  </p>
+
+                  <span class="activity-card-link">Learn more →</span>
+                </div>
+              </button>
+            </div>
+          </section>
+        </div>
+
+        <!-- ==================================
+     ACTIVITY MODAL
+=================================== -->
+
+        <div
+          class="activity-modal hidden"
+          id="activity-modal"
+          aria-hidden="true"
+        >
+          <div class="activity-modal-card">
+            <button
+              type="button"
+              class="activity-modal-close"
+              id="activity-modal-close"
+              aria-label="Close activity"
+            >
+              &times;
+            </button>
+
+            <div class="activity-modal-image">
+              <img id="activity-modal-image" src="" alt="" />
+            </div>
+
+            <div class="activity-modal-content">
+              <p class="eyebrow">CELEBRATE</p>
+
+              <h2 id="activity-modal-title"></h2>
+
+              <p
+                class="activity-modal-description"
+                id="activity-modal-description"
+              ></p>
+
+              <div class="activity-modal-meta">
+                <div>
+                  <span>HELD</span>
+                  <strong id="activity-modal-time"></strong>
+                </div>
+
+                <div>
+                  <span>FOCUS</span>
+                  <strong id="activity-modal-effort"></strong>
+                </div>
+              </div>
+
+              <div
+                class="activity-modal-details"
+                id="activity-modal-details"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+       <!-- ==================================
+                 MILESTONES & ACHIEVEMENTS PAGE
+            =================================== -->
+
+        <div class="website-page" id="page-study-stress">
+          <section class="content-page">
+            <div class="page-introduction">
+              <p class="eyebrow">ACHIEVEMENTS</p>
+
+              <h1>Milestones &amp; Achievements</h1>
+
+              <p>
+                Toledo City Science High School has earned recognition across
+                campus journalism, the arts, science innovation, mathematics, and
+                sports between 2025 and 2026. Many of these achievements are
+                documented in the school’s official publications:
+                <em>The Catalyst</em> (English) and <em>Ang Siklab</em> (Filipino).
+              </p>
+            </div>
+
+            <!-- HIGHLIGHTS -->
+
+            <div class="milestone-highlights">
+              <div class="milestone-stat">
+                <strong>3rd</strong>
+                <span>Overall Top Performing School</span>
+                <small>DSPC 2026</small>
+              </div>
+
+              <div class="milestone-stat">
+                <strong>2nd</strong>
+                <span>Best School Publication Overall, Region VII</span>
+                <small>Ang Siklab · RSPC 2026</small>
+              </div>
+
+              <div class="milestone-stat">
+                <strong>1st</strong>
+                <span>Grand Award, Science News Video Report</span>
+                <small>NSEF 2026</small>
+              </div>
+
+              <div class="milestone-stat">
+                <strong>1st</strong>
+                <span>Senior High School Category</span>
+                <small>PAMES–CASIO Math Challenge 2026</small>
+              </div>
+            </div>
+
+            <!-- CAMPUS JOURNALISM -->
+
+            <div class="milestone-group">
+              <h2 class="milestone-group-title">Campus Journalism</h2>
+
+              <div class="milestone-grid">
+
+                <!-- DSPC 2026 -->
+                <article class="milestone-card milestone-card-wide">
+                  <p class="eyebrow">DIVISION · SEPTEMBER 2026</p>
+                  <h3>Division Schools Press Conference (DSPC) 2026</h3>
+                  <p class="milestone-lead">
+                    TCSHS placed <strong>3rd Overall Top Performing School</strong>,
+                    securing multiple publication, individual, and group awards.
+                  </p>
+
+                  <h4>Overall Publication Awards</h4>
+                  <ul class="award-list">
+                    <li><span class="place place-2">2nd</span><span>School Paper Layout and Design (Secondary), Filipino — <em>Ang Siklab</em></span></li>
+                    <li><span class="place place-2">2nd</span><span>School Paper Layout and Design (Secondary), English — <em>The Catalyst</em></span></li>
+                  </ul>
+
+                  <h4>Individual Categories</h4>
+                  <ul class="award-list">
+                    <li><span class="place place-1">1st</span><span>Science and Technology Writing (English) — Mary Louise M. Quilaton<br><small>Coach: Ms. Sarah Jane A. Imo</small></span></li>
+                    <li><span class="place place-1">1st</span><span>Science and Technology Writing (Filipino) — Ashleigh Rhian N. Guillano<br><small>Coach: Ms. Sarah Jane A. Imo</small></span></li>
+                    <li><span class="place place-1">1st</span><span>Editorial Writing (Filipino) — Casiafia A. Caliñada<br><small>Coach: Mrs. Mary Mae R. Cantorne</small></span></li>
+                    <li><span class="place place-2">2nd</span><span>Editorial Writing (English) — Marc Godwin U. Maravillas<br><small>Coach: Mrs. Mary Mae R. Cantorne</small></span></li>
+                    <li><span class="place place-2">2nd</span><span>Copyreading and Headline Writing (English) — Brianna Cecilia Lechadores<br><small>Coach: Ms. Sarah Mae T. Ponting</small></span></li>
+                    <li><span class="place place-1">1st</span><span>Editorial Cartooning (English) — John Carlson E. Caques<br><small>Coach: Mrs. Gresita E. Cabillar</small></span></li>
+                    <li><span class="place">5th</span><span>Editorial Cartooning (Filipino) — Ruzne Jane R. Nuñez<br><small>Coach: Ms. Sarah Mae T. Ponting</small></span></li>
+                  </ul>
+
+                  <h4>Group Categories</h4>
+                  <ul class="award-list">
+                    <li><span class="place place-1">1st</span><span>Collaborative Desktop Publishing (Filipino)</span></li>
+                    <li><span class="place place-1">1st</span><span>Collaborative Desktop Publishing (English)</span></li>
+                    <li><span class="place place-1">1st</span><span>Online Publishing (Filipino)</span></li>
+                    <li><span class="place place-3">3rd</span><span>Online Publishing (English)</span></li>
+                    <li><span class="place place-3">3rd</span><span>Radio Script Writing and Broadcasting (Filipino) — Best Script (1st), Best in Infomercial (1st)</span></li>
+                    <li><span class="place place-3">3rd</span><span>Radio Script Writing and Broadcasting (English) — Best Script (3rd), Best in Infomercial (3rd)</span></li>
+                  </ul>
+
+                  <details>
+                    <summary>View group members</summary>
+
+                    <h4>Collaborative Desktop Publishing — Filipino (1st)</h4>
+                    <p>
+                      Wynnie Bryle D. Gaña (News Writer) · K’thana Rhogue M. Castro (Photojournalist) ·
+                      Khryz Rowei E. Cacananta (Sports Writer) · Dianella Rafael C. Villaver (Feature Writer) ·
+                      Lemuel L. Presente (Layout Artist) · Kylie Jade S. Tolin (Editorial Cartoonist) ·
+                      Bridget Hilary V. Chiefe (Editorial Writer)<br>
+                      <small>Coach: Ms. Sarah Mae T. Ponting</small>
+                    </p>
+
+                    <h4>Collaborative Desktop Publishing — English (1st)</h4>
+                    <p>
+                      Aisha Nicole R. Pahamutang (News Writer) · Vince Lee B. Tan (Photojournalist) ·
+                      Charlove P. Dolino (Sports Writer) · Sheryfina G. Castaños (Feature Writer) ·
+                      Hershey Feona Calonia (Layout Artist) · Mikaela Therese C. Villalon (Editorial Cartoonist) ·
+                      Ashlegail B. De los Santos (Editorial Writer)<br>
+                      <small>Coach: Mrs. Gresita E. Cabillar</small>
+                    </p>
+
+                    <h4>Online Publishing — Filipino (1st)</h4>
+                    <p>
+                      Therese Sophia J. Ubod (News Writer) · Gian Meiko Miguel S. Ponting (Sports Writer) ·
+                      Rechiv G. Papellero (Editorial Writer) · Jenmarie T. Pitogo (Feature Writer) ·
+                      Mary Therese B. Peralta (Layout Artist)<br>
+                      <small>Coach: Ms. April Rose A. Obenza</small>
+                    </p>
+
+                    <h4>Online Publishing — English (3rd)</h4>
+                    <p>
+                      Seanele T. Tampepe (News Writer) · Jillian Khae C. Costanilla (Sports Writer) ·
+                      Seth Addison A. Paran (Editorial Writer) · Joscent Mae N. Ubod (Feature Writer) ·
+                      Janelle Grace M. Espadilla (Layout Artist)<br>
+                      <small>Coach: Mr. Philip John A. Budiongan</small>
+                    </p>
+
+                    <h4>Radio Broadcasting — Filipino (3rd)</h4>
+                    <p>
+                      Jay Clark P. Tagacanao (Anchor 1) · Aizhea T. Amanence (Anchor 2) ·
+                      Abbegail D. Caballero (News Presenter 1) · Kyle Joseph Cervantes (News Presenter 2) ·
+                      Levie Ahnn B. Villa (News Presenter 3) · Albrich Elaija H. Aposaga (News Presenter 4) ·
+                      Rabbi F. Malabon (Technical Director)<br>
+                      <small>Coach: Mrs. Diosa S. Mallari</small>
+                    </p>
+
+                    <h4>Radio Broadcasting — English (3rd)</h4>
+                    <p>
+                      Dhayne Diorous C. Juarez (Anchor 1) · Honey Mae G. Plaza (Anchor 2) ·
+                      Mary Margaret Pawa (News Presenter 1) · Christ Khayzee R. Bacalso (News Presenter 2) ·
+                      Elijah Emmanuel Pandaan (News Presenter 3) · Chloe Baton (News Presenter 4) ·
+                      Ajh Benedict Baldisco (Technical Director)<br>
+                      <small>Coach: Mrs. Mary Mae R. Cantorne</small>
+                    </p>
+                  </details>
+                </article>
+
+                <!-- RSPC 2026 -->
+                <article class="milestone-card">
+                  <p class="eyebrow">REGIONAL · MARCH 2026</p>
+                  <h3>Regional Schools Press Conference (RSPC) 2026</h3>
+                  <p class="milestone-lead">
+                    At the Region VII tournament, both student publications
+                    earned major regional awards, with <em>Ang Siklab</em> placing
+                    <strong>2nd Best School Publication in Region 7</strong>.
+                  </p>
+
+                  <h4><em>Ang Siklab</em> (Filipino)</h4>
+                  <ul class="award-list">
+                    <li><span class="place place-2">2nd</span><span>Best School Publication in Region 7</span></li>
+                    <li><span class="place place-1">1st</span><span>Layout and Design</span></li>
+                    <li><span class="place place-3">3rd</span><span>Science and Technology Section</span></li>
+                    <li><span class="place">4th</span><span>Sports Section</span></li>
+                    <li><span class="place">5th</span><span>Editorial Section</span></li>
+                  </ul>
+
+                  <h4><em>The Catalyst</em> (English)</h4>
+                  <ul class="award-list">
+                    <li><span class="place place-3">3rd</span><span>Layout and Design</span></li>
+                    <li><span class="place place-3">3rd</span><span>Science and Technology Section</span></li>
+                  </ul>
+                </article>
+
+                <!-- DSPC 2025 -->
+                <article class="milestone-card">
+                  <p class="eyebrow">DIVISION · 2025</p>
+                  <h3>Division Schools Press Conference (DSPC) 2025</h3>
+                  <p class="milestone-lead">
+                    TCSHS was named <strong>1st Best Performing School (Secondary)</strong>.
+                  </p>
+
+                  <ul class="award-list">
+                    <li><span class="place place-1">1st</span><span>School Paper Layout and Design (Filipino) — <em>Ang Siklab</em></span></li>
+                    <li><span class="place place-2">2nd</span><span>School Paper Layout and Design (English) — <em>The Catalyst</em></span></li>
+                    <li><span class="place place-1">1st</span><span>Photojournalism (English) — K’thana Rhogue M. Castro<br><small>Coach: Mrs. Diosa S. Mallari</small></span></li>
+                    <li><span class="place place-1">1st</span><span>Science and Technology Writing (English) — Mary Louise M. Quilaton<br><small>Coach: Ms. Sarah Jane A. Imo</small></span></li>
+                    <li><span class="place place-1">1st</span><span>Sports Writing (English) — Micah Ashlee C. Barinque<br><small>Coach: Mr. Philip John Budiongan</small></span></li>
+                    <li><span class="place place-3">3rd</span><span>Sports Writing (Filipino) — Kyle Cassandra T. Belasoto<br><small>Coach: Mr. Philip John Budiongan</small></span></li>
+                    <li><span class="place place-3">3rd</span><span>News Writing (Filipino) — Larah Meigh Q. Palao<br><small>Coach: Mrs. Gresita E. Cabillar</small></span></li>
+                    <li><span class="place place-3">3rd</span><span>Column Writing (English) — Niña Fe B. Popera<br><small>Coach: Mrs. Diosa S. Mallari</small></span></li>
+                    <li><span class="place">5th</span><span>Copyreading and Headline Writing (Filipino) — Kathleen P. Cheng<br><small>Coach: Ms. Sarah Mae T. Ponting</small></span></li>
+                    <li><span class="place place-1">1st</span><span>Radio Script Writing and Broadcasting (Filipino) — Best in Script, Best in Infomercial, Best Anchor<br><small>Coach: Ms. Sarah Jane A. Imo</small></span></li>
+                    <li><span class="place place-2">2nd</span><span>Radio Script Writing and Broadcasting (English) — Best in Script, Best in Infomercial<br><small>Coach: Mrs. Diosa S. Mallari</small></span></li>
+                    <li><span class="place place-1">1st</span><span>Collaborative Desktop Publishing (Filipino)<br><small>Coach: Ms. Sarah Mae T. Ponting</small></span></li>
+                    <li><span class="place place-1">1st</span><span>Collaborative Desktop Publishing (English)<br><small>Coach: Mrs. Gresita E. Cabillar</small></span></li>
+                    <li><span class="place place-2">2nd</span><span>Online Publishing (Filipino)<br><small>Coach: Mr. Philip John A. Budiongan</small></span></li>
+                    <li><span class="place place-2">2nd</span><span>Online Publishing (English)<br><small>Coach: Mr. Philip John A. Budiongan</small></span></li>
+                  </ul>
+
+                  <details>
+                    <summary>View group members</summary>
+
+                    <h4>Radio Broadcasting — Filipino (1st)</h4>
+                    <p>
+                      Rabbi F. Malabon (Technical Director) · Archprince B. Canonigo (Anchor 1) ·
+                      Dianella Rafael C. Villaver (Anchor 2) · Wynnie Bryle D. Gaña (News Presenter 1) ·
+                      Aizhea T. Amanence (News Presenter 2) · Kyle Joseph C. Cervantes (News Presenter 3) ·
+                      Angel Blanco (News Presenter 4)
+                    </p>
+
+                    <h4>Radio Broadcasting — English (2nd)</h4>
+                    <p>
+                      Kimuel M. Salada (Technical Director) · Dhayne Diorous C. Juarez (Anchor 1) ·
+                      Honey Mae G. Plaza (Anchor 2) · Charmelle Faith B. Arinsol (News Presenter 1) ·
+                      Jhazeel Gabrielle A. Marata (News Presenter 2) · Elijah Emmanuel R. Pandaan (News Presenter 3) ·
+                      Christ Khayzee R. Bacalso (News Presenter 4)
+                    </p>
+
+                    <h4>Collaborative Desktop Publishing — Filipino (1st)</h4>
+                    <p>
+                      Chrisvel Mae U. Toling (News Writer) · Seth Matteo A. Noel (Photojournalist) ·
+                      Khryz Rowei N. Cacananta (Sports Writer) · Piper Dominique A. Mendoza (Feature Writer) ·
+                      Lemuel L. Presente (Layout Artist) · Kylie Jade S. Tolin (Editorial Cartoonist) ·
+                      Bridget Hilary V. Chiefe (Editorial Writer)
+                    </p>
+
+                    <h4>Collaborative Desktop Publishing — English (1st)</h4>
+                    <p>
+                      Victoria Joy Macapaz (News Writer) · Vince Lee B. Tan (Photojournalist) ·
+                      Charlove P. Dolino (Sports Writer) · Sheryfina G. Castaños (Feature Writer) ·
+                      Hershey Feona Calonia (Layout Artist) · Mikaela Therese C. Villalon (Editorial Cartoonist) ·
+                      Marc Godwin U. Maravillas (Editorial Writer)
+                    </p>
+
+                    <h4>Online Publishing — Filipino (2nd)</h4>
+                    <p>
+                      Therese Sophia J. Ubod (News Writer) · Gianmieko Miguel S. Ponting (Sports Writer) ·
+                      Alicia Beatrize E. Berdad (Editorial) · Hannah Mae S. Honoridez (Feature Writer) ·
+                      Mary Therese B. Peralta (Layout Artist)
+                    </p>
+
+                    <h4>Online Publishing — English (2nd)</h4>
+                    <p>
+                      Precious Zoe B. Tan (News Writer) · Mikaela Eunice C. Sabellano (Sports Writer) ·
+                      Chemika Carshel A. Empuerto (Editorial) · Myla Jane M. Aguilar (Feature Writer) ·
+                      Miel Aleza L. Nemenzo (Layout Artist)
+                    </p>
+                  </details>
+                </article>
+              </div>
+            </div>
+
+            <!-- ARTS & TALENT -->
+
+            <div class="milestone-group">
+              <h2 class="milestone-group-title">Arts &amp; Talent</h2>
+
+              <div class="milestone-grid">
+                <article class="milestone-card">
+                  <p class="eyebrow">REGIONAL · 2025</p>
+                  <h3>Regional Festival of Talent</h3>
+
+                  <ul class="award-list">
+                    <li><span class="place place-2">2nd</span><span>Dokyuwento — Wynnie Bryle D. Gaña, Ashleigail de los Santos, John Myco Cabatuan<br><small>Coach: Ms. Michelle Medrano · Represented by: Mrs. April Rose Obenza</small></span></li>
+                    <li><span class="place place-3">3rd</span><span>Cinemunti — Best Picture, short film <em>“Litrato”</em><br><small>Lemuel Presente, Seth Matteo Noel, Daniel Calabroso, Kylie Jade Tolin, Levie Ahnn Villa</small></span></li>
+                    <li><span class="place place-1">Best</span><span>Cinemunti — Best Cinematography (Videographer/Editor: Lemuel Presente)</span></li>
+                  </ul>
+                </article>
+
+                <article class="milestone-card">
+                  <p class="eyebrow">DIVISION · 2025</p>
+                  <h3>Division Festival of Talent</h3>
+
+                  <ul class="award-list">
+                    <li><span class="place place-1">1st</span><span>Bidyokasiya — Wynnie Bryle D. Gaña<br><small>Coach: Ms. Michelle Medrano · Chaperone: Mrs. Geralden Declaro</small></span></li>
+                    <li><span class="place place-1">1st</span><span>Sinelikisik — Lemuel Presente, Daniel Calabroso, Voxdei Tanudra, Kylie Tolin, Chrisvel Toling, Levie Ahnn Villa<br><small>Coach: Mrs. Juresa Vanch Camoro</small></span></li>
+                    <li><span class="place place-2">2nd</span><span>Likhawitan — Kimuel Salada, Aaron John Martinez<br><small>Coach: Mrs. April Obenza</small></span></li>
+                    <li><span class="place place-3">3rd</span><span>AP Histopop Quiz Bee — Jenmarie Pitogo<br><small>Coach: Mrs. Rezie Kim Rivera</small></span></li>
+                    <li><span class="place place-3">3rd</span><span>Read-A-Thon: 5-Minute Advocacy Speech — Sheryfina Castaños<br><small>Coach: Mr. Philip John Budiongan</small></span></li>
+                    <li><span class="place">4th</span><span>Impromptu Speech — Dhayne Diorous Juarez<br><small>Coach: Mrs. Rezie Kim Rivera</small></span></li>
+                    <li><span class="place">5th</span><span>Sulatanghal — Seth Matteo A. Noel<br><small>Coach: Ms. Sarah Mae Ponting</small></span></li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+
+            <!-- SCIENCE -->
+
+            <div class="milestone-group">
+              <h2 class="milestone-group-title">Science &amp; Innovation</h2>
+
+              <div class="milestone-grid">
+                <article class="milestone-card milestone-card-wide">
+                  <p class="eyebrow">NATIONAL · 2026</p>
+                  <h3>National Science and Engineering Fair (NSEF) 2026</h3>
+                  <p class="milestone-lead">
+                    The school secured the <strong>1st Grand Award</strong> in
+                    the Science News Video Report category.
+                  </p>
+
+                  <ul class="award-list">
+                    <li><span class="place place-1">1st</span><span>Science News Video Report — hybrid solar-rain energy system project</span></li>
+                  </ul>
+                </article>
+
+                <article class="milestone-card milestone-card-wide">
+                  <p class="eyebrow">NATIONAL · NOVEMBER 28, 2025</p>
+                  <h3>National Materials Science and Engineering Summit</h3>
+                  <p class="milestone-lead">
+                    Held at UP Diliman, two TCSHS research projects showed that
+                    innovation and sustainability go hand in hand.
+                  </p>
+
+                  <ul class="award-list">
+                    <li><span class="place place-2">2nd</span><span><strong>Alternative Renewable Energy</strong> — CHARGE CS-TENG (Coconut Shell Harvesting for the Alternative Renewable Generation of Electricity through Contact Separation Triboelectric Nanogenerators)<br><small>Precious Zoe Tan, Mhera Angel Verdeflor, Miel Alexa Nemenzo, Chrisvel Mae Toling, Alicia Beatrize Berdad</small></span></li>
+                    <li><span class="place place-3">3rd</span><span><strong>Sustainable Seawater Desalination</strong> — CHB-SIE (Corn Husks Biochar as Solar Absorber in Solar Interfacial Evaporation for Seawater Desalination)<br><small>Shanese Binalayo, Monica Mariane Sabate, Mheykabellah Therese Paisano, Gleenah Feb Conahap</small></span></li>
+                  </ul>
+                </article>
+
+                <article class="milestone-card">
+                  <p class="eyebrow">REGIONAL · 2025</p>
+                  <h3>Regional Science and Technology Week 2025</h3>
+
+                  <h4>Basic Research</h4>
+                  <ul class="award-list">
+                    <li><span class="place place-1">1st</span><span>Tan &amp; Nemenzo</span></li>
+                    <li><span class="place place-2">2nd</span><span>Paisano &amp; Sabate<br><small>Coach: Virgie Lee Deligero</small></span></li>
+                  </ul>
+
+                  <h4>Applied Research</h4>
+                  <ul class="award-list">
+                    <li><span class="place place-2">2nd</span><span>Gulpany &amp; Macapobre<br><small>Coach: Patrick James C. Tesorio</small></span></li>
+                  </ul>
+                </article>
+
+                <article class="milestone-card">
+                  <p class="eyebrow">REGIONAL · 2025</p>
+                  <h3>Regional Science and Technology Fair 2025</h3>
+
+                  <h4>Tuklas — Physical Science</h4>
+                  <ul class="award-list">
+                    <li><span class="place place-2">2nd</span><span>Individual: Precious Zoe B. Tan — also Best in Paper Presentation<br><small>Coach: Ma’am Virgie Lee E. Deligero</small></span></li>
+                    <li><span class="place">5th</span><span>Team: Shanese D. Binalayo, Mheykabellah Therese A. Paisano, Monica Mariane Sabate<br><small>Coach: Ma’am Virgie Lee E. Deligero</small></span></li>
+                  </ul>
+
+                  <h4>Tuklas — Robotics and Intelligent Machines</h4>
+                  <ul class="award-list">
+                    <li><span class="place">Finalist</span><span>Jose Francisco C. Narvacan<br><small>Coach: Sir Patrick James C. Tesorio</small></span></li>
+                  </ul>
+
+                  <h4>Tuklas — Math and Computational Science</h4>
+                  <ul class="award-list">
+                    <li><span class="place">Finalist</span><span>Andrei Gergil P. Pabatao<br><small>Coach: Sir Patrick James C. Tesorio</small></span></li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+
+            <!-- MATHEMATICS -->
+
+            <div class="milestone-group">
+              <h2 class="milestone-group-title">Mathematics</h2>
+
+              <div class="milestone-grid">
+                <article class="milestone-card milestone-card-wide">
+                  <p class="eyebrow">DIVISION · SEPTEMBER 26, 2026</p>
+                  <h3>PAMES–CASIO Math Challenge 2026 (PCMC)</h3>
+                  <p class="milestone-lead">
+                    Held at the Sisters of Mary Boystown School in Minglanilla,
+                    Cebu. TCSHS mathletes earned high-ranking podium finishes at
+                    the Division level.
+                  </p>
+
+                  <ul class="pcmc-list">
+                    <li class="pcmc-row">
+                      <span class="place place-2">2nd</span>
+                      <div>
+                        <strong>Deej Jacob L. Dolino</strong>
+                        <small>Grade 7 · Coach: Michelle Medrano</small>
+                      </div>
+                    </li>
+
+                    <li class="pcmc-row">
+                      <span class="place place-3">3rd</span>
+                      <div>
+                        <strong>Zahra Mariae M. Remulta</strong>
+                        <small>Grade 8 · Coach: Michelle Medrano</small>
+                      </div>
+                    </li>
+
+                    <li class="pcmc-row">
+                      <span class="place place-1">1st</span>
+                      <div>
+                        <strong>Sameh R. Lomodag</strong>
+                        <small>Senior High School · Coach: Patrick James Tesorio</small>
+                      </div>
+                    </li>
+
+                    <li class="pcmc-row">
+                      <span class="place place-2">2nd</span>
+                      <div>
+                        <strong>Gabriel Manuel I. Tiongson</strong>
+                        <small>Senior High School · Coach: Lieda Mae Bejoc</small>
+                      </div>
+                    </li>
+
+                    <li class="pcmc-row">
+                      <span class="place place-3">3rd</span>
+                      <div>
+                        <strong>K’thana Rhogue M. Castro</strong>
+                        <small>Senior High School · Coach: Lieda Mae Bejoc</small>
+                      </div>
+                    </li>
+
+                    <li class="pcmc-row">
+                      <span class="place place-3">3rd</span>
+                      <div>
+                        <strong>Hershey Feona Calonia</strong>
+                        <small>Senior High School · Coach: Michelle Medrano</small>
+                      </div>
+                    </li>
+                  </ul>
+                </article>
+
+                <article class="milestone-card milestone-card-wide">
+                  <p class="eyebrow">REGIONAL · 2026</p>
+                  <h3>MTAP Math Challenge 2026 — Final Rounds</h3>
+                  <p class="milestone-lead">
+                    The TCSHS team earned <strong>3rd Place</strong> in the Regional
+                    Area Finals (Region VII), Team Category — a result that reflects
+                    perseverance, teamwork, and a deep love for learning.
+                  </p>
+
+                  <ul class="pcmc-list">
+                    <li class="pcmc-row">
+                      <span class="place place-3">3rd</span>
+                      <div>
+                        <strong>Xian Eduard Gomez</strong>
+                        <small>Team Category</small>
+                      </div>
+                    </li>
+                    <li class="pcmc-row">
+                      <span class="place place-3">3rd</span>
+                      <div>
+                        <strong>Chael Lourd Almia</strong>
+                        <small>Team Category</small>
+                      </div>
+                    </li>
+                    <li class="pcmc-row">
+                      <span class="place place-3">3rd</span>
+                      <div>
+                        <strong>Dian Gabrielle Villaver</strong>
+                        <small>Team Category</small>
+                      </div>
+                    </li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+
+            <!-- SPORTS -->
+
+            <div class="milestone-group">
+              <h2 class="milestone-group-title">Sports</h2>
+
+              <div class="milestone-grid">
+                <article class="milestone-card">
+                  <p class="eyebrow">CLUSTER MEET</p>
+                  <h3>Badminton</h3>
+
+                  <h4>Boys</h4>
+                  <ul class="award-list">
+                    <li><span class="place place-1">Gold</span><span>Singles B — Charles Rubin Rodrigo<br><small>Coach: Venus Yrog-irog</small></span></li>
+                  </ul>
+
+                  <h4>Girls</h4>
+                  <ul class="award-list">
+                    <li><span class="place place-1">Gold</span><span>Singles A — Danica Tundag</span></li>
+                    <li><span class="place place-2">Silver</span><span>Singles B — Kyle Cassandra Belasoto</span></li>
+                    <li><span class="place place-3">Bronze</span><span>Doubles — Angel Faith Cañizares &amp; Ilysse Purisima<br><small>Coach: April Rose Obenza</small></span></li>
+                  </ul>
+                </article>
+
+                <article class="milestone-card">
+                  <p class="eyebrow">CLUSTER MEET</p>
+                  <h3>Chess</h3>
+
+                  <h4>Girls</h4>
+                  <ul class="award-list">
+                    <li><span class="place place-1">Gold</span><span>Individual, Board 1 — Daniela Chaeline Villalon</span></li>
+                    <li><span class="place place-2">Silver</span><span>Individual, Board 2 — Khlain Michele Carvellida</span></li>
+                    <li><span class="place place-1">Gold</span><span>Team — Villalon &amp; Carvellida<br><small>Coach: Ever Grace Delos Santos</small></span></li>
+                  </ul>
+
+                  <h4>Boys</h4>
+                  <ul class="award-list">
+                    <li><span class="place place-2">Silver</span><span>Individual, Board 1 — Dominic Li Montemayor</span></li>
+                    <li><span class="place place-3">Bronze</span><span>Team — Dominic Li Montemayor &amp; Dian Gabrielle Villaver<br><small>Coach: Michael Villalon</small></span></li>
+                  </ul>
+
+                  <p class="milestone-note">
+                    Daniela Chaeline Villalon and Dominic Li Montemayor will
+                    represent Cluster 1 in the upcoming Division Meet.
+                  </p>
+                </article>
+
+                <article class="milestone-card">
+                  <p class="eyebrow">CLUSTER MEET</p>
+                  <h3>Table Tennis</h3>
+
+                  <h4>Singles</h4>
+                  <ul class="award-list">
+                    <li><span class="place place-2">Silver</span><span>Jeriel Laum</span></li>
+                    <li><span class="place place-3">Bronze</span><span>Clirielle Ramos</span></li>
+                  </ul>
+
+                  <h4>Doubles</h4>
+                  <ul class="award-list">
+                    <li><span class="place place-2">Silver</span><span>Ace Merabe &amp; Arnie Mae Cantila</span></li>
+                  </ul>
+
+                  <p class="milestone-note">
+                    Coach: Gresita Cabillar · Assistant Coach: Geralden Declaro.
+                    The 2nd-place singles player will advance to the Division Meet.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ==================================
+                 LOCATION PAGE
+            =================================== -->
+
+        <div class="website-page" id="page-calm-zone">
+          <section class="calm-page">
+            <div class="calm-introduction">
+              <p class="eyebrow">LOCATION</p>
+
+              <h1>Find TCSHS.</h1>
+
+              <p>
+                Locate Toledo City Science High School on the map, copy its
+                coordinates, or open directions in Google Maps.
+              </p>
+            </div>
+
+            <div class="location-layout">
+              <!-- ==========================================
+                   MAP CARD
+              ========================================== -->
+
+              <div class="location-map-card">
+                <div class="location-map">
+                  <iframe
+                    src="https://maps.google.com/maps?q=10.3815401,123.654333&amp;z=17&amp;output=embed"
+                    title="Map showing the location of Toledo City Science High School"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+
+                <p class="location-map-hint">
+                  Drag the map to move around and use the + / &minus; buttons to
+                  zoom. Select the pin or &ldquo;Open in Google Maps&rdquo; for
+                  directions.
+                </p>
+              </div>
+
+              <!-- ==========================================
+                   DETAILS CARD
+              ========================================== -->
+
+              <aside class="location-info">
+                <p class="eyebrow">COORDINATES</p>
+
+                <h2>Toledo City Science High School</h2>
+
+                <p class="location-address">Toledo City, Cebu, Philippines</p>
+
+                <dl class="coord-list">
+                  <div class="coord-row">
+                    <dt>Latitude</dt>
+                    <dd>10.381540&deg; N</dd>
+                  </div>
+
+                  <div class="coord-row">
+                    <dt>Longitude</dt>
+                    <dd>123.654333&deg; E</dd>
+                  </div>
+
+                  <div class="coord-row">
+                    <dt>DMS</dt>
+                    <dd>10&deg;22&prime;53.5&Prime;N 123&deg;39&prime;15.6&Prime;E</dd>
+                  </div>
+
+                  <div class="coord-row">
+                    <dt>Plus Code</dt>
+                    <dd>9MJ4+C8X</dd>
+                  </div>
+                </dl>
+
+                <button
+                  type="button"
+                  class="outline-button coord-copy"
+                  id="coord-copy"
+                  data-copy="10.381540, 123.654333"
+                >
+                  Copy coordinates
+                </button>
+
+                <div class="location-actions">
+                  <a
+                    class="primary-button"
+                    href="https://maps.google.com/maps?cid=8326532087114806661"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Open in Google Maps
+                  </a>
+
+                  <a
+                    class="secondary-button"
+                    href="https://www.google.com/maps/dir/?api=1&amp;destination=Toledo+City+Science+High+School&amp;destination_place_id=ChIJbQSf2eZyqTMRhbVeP9HIjXM"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Get directions
+                  </a>
+                </div>
+              </aside>
+            </div>
+          </section>
+        </div>
+
+        <!-- ==================================
+                 CONTACT PAGE
+            =================================== -->
+
+        <div class="website-page" id="page-help-support">
+          <section class="content-page">
+            <div class="page-introduction">
+              <p class="eyebrow">CONTACT</p>
+
+              <h1>Get in touch with TCSHS.</h1>
+
+              <p>
+                Call the school, message the official Facebook page, or find
+                the campus on the map.
+              </p>
+            </div>
+
+            <div class="contact-layout">
+              <!-- ==========================================
+                   SCHOOL CARD
+              ========================================== -->
+
+              <article class="contact-school">
+                <img
+                  src="asset/logo.png"
+                  alt="Toledo City Science High School seal"
+                  class="contact-school-logo"
+                />
+
+                <p class="contact-school-motto">
+                  Exaltatus Fueres; Soar High, Sci-High!
+                </p>
+
+                <h2>Toledo City Science High School</h2>
+
+                <p class="contact-school-sub">
+                  Schools Division of Toledo City &middot; Region VII
+                </p>
+
+                <dl class="contact-school-details">
+                  <div>
+                    <dt>Address</dt>
+                    <dd>Ilihan, Toledo City, Cebu</dd>
+                  </div>
+
+                  <div>
+                    <dt>School ID</dt>
+                    <dd>303315</dd>
+                  </div>
+                </dl>
+              </article>
+
+              <!-- ==========================================
+                   CONTACT METHODS
+              ========================================== -->
+
+              <div class="contact-methods">
+                <a class="contact-method" href="tel:+63323843925">
+                  <span class="contact-method-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg></span>
+
+                  <span class="contact-method-text">
+                    <small>PHONE</small>
+                    <strong>000 0000000</strong>
+                    <em>Tap to call on a mobile device</em>
+                  </span>
+
+                  <span class="contact-method-arrow">&#8250;</span>
+                </a>
+
+                <a
+                  class="contact-method"
+                  href="https://www.facebook.com/tcshs1996"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span class="contact-method-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.8c0-.9.3-1.5 1.6-1.5h1.7V3.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.4H7.7V13h2.7v8z"/></svg></span>
+
+                  <span class="contact-method-text">
+                    <small>FACEBOOK</small>
+                    <strong>facebook.com/tcshs1996</strong>
+                    <em>Message the official school page</em>
+                  </span>
+
+                  <span class="contact-method-arrow">&#8250;</span>
+                </a>
+
+                <button
+                  type="button"
+                  class="contact-method"
+                  data-navigate="calm-zone"
+                >
+                  <span class="contact-method-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></span>
+
+                  <span class="contact-method-text">
+                    <small>VISIT US</small>
+                    <strong>Ilihan, Toledo City, Cebu</strong>
+                    <em>View the campus on the map</em>
+                  </span>
+
+                  <span class="contact-method-arrow">&#8250;</span>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!-- ======================================
+             FOOTER
+        ======================================= -->
+
+      <footer>
+        <strong>
+          TCSHS: Toledo City Science High School
+        </strong>
+
+        <p class="members">
+          
+
+          <span class="member">
+            K'thana
+            <span class="member-info">
+              <strong>Castro, K'thana Rhogue M.</strong>
+              <br />
+              Contact #: 0945 665 1217
+              <br />
+              Facebook: K'thana Rhogue
+              <br />
+              Gmail: kthanacastro176@gmail.com
+            </span>
+          </span>
+
+          <span class="member">
+            Hershey
+            <span class="member-info">
+              <strong>Calonia, Hershey Feona</strong>
+              <br />
+              Contact #: 
+              <br />
+              Facebook: 
+              <br />
+              Gmail: 
+            </span>
+          </span>
+
+          <span class="member">
+            Bonita
+            <span class="member-info">
+              <strong>Bonita, Merry Christe</strong>
+              <br />
+              Contact #: 
+              <br />
+              Facebook: 
+              <br />
+              Gmail: 
+            </span>
+          </span>
+
+          <!-- Continue for the other members -->
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+      document.addEventListener("click", function (event) {
+        const ripple = document.createElement("span");
+
+        ripple.className = "click-ripple";
+
+        ripple.style.left = event.clientX + "px";
+        ripple.style.top = event.clientY + "px";
+
+        document.body.appendChild(ripple);
+
+        setTimeout(() => {
+          ripple.remove();
+        }, 700);
+      });
+    </script>
+  </body>
+</html>
