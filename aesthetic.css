@@ -1,0 +1,671 @@
+/* =========================================================
+   TCSHS — AESTHETIC LAYER
+   Load AFTER styles.css:
+     <link rel="stylesheet" href="styles.css" />
+     <link rel="stylesheet" href="aesthetic.css" />
+
+   Same navy-teal + white theme, refined:
+   • deeper, more legible hero with frosted-glass cards
+   • softer, consistent surfaces and shadows
+   • clearer hierarchy inside the info, milestone and contact pages
+   ========================================================= */
+
+:root {
+  /* extra blue-white tones that stay inside the seal's palette */
+  --sky: #cfe6ee;
+  --sky-pale: #eaf4f7;
+  --navy-night: #02293a;
+
+  --radius-s: 10px;
+  --radius-m: 16px;
+  --radius-l: 24px;
+
+  --shadow-soft: 0 2px 6px rgba(4, 69, 89, 0.05), 0 12px 32px rgba(4, 69, 89, 0.08);
+  --shadow-lift: 0 4px 10px rgba(4, 69, 89, 0.08), 0 20px 44px rgba(4, 69, 89, 0.14);
+}
+
+/* ---------- base ---------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(1100px 520px at 90% -10%, rgba(46, 124, 147, 0.12), transparent 60%),
+    radial-gradient(900px 480px at -10% 30%, rgba(4, 69, 89, 0.07), transparent 60%),
+    var(--paper);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: var(--moss);
+  color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.015em;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--paper);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: 10px;
+  border: 2px solid var(--paper);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clay);
+}
+
+/* eyebrow: quiet label with a short accent line */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 0.14em;
+}
+.page-introduction .eyebrow::before,
+.calm-introduction .eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--moss), var(--clay));
+}
+
+/* ---------- loading screen ---------- */
+
+#loading-screen {
+  background:
+    radial-gradient(600px 400px at 50% 40%, var(--sky-pale), transparent 70%),
+    var(--paper);
+}
+#loading-logo {
+  filter: drop-shadow(0 8px 18px rgba(4, 69, 89, 0.25));
+}
+.loading-bar-container {
+  height: 5px;
+  background: var(--sky);
+}
+#loading-bar {
+  background: linear-gradient(90deg, var(--moss), var(--clay));
+  border-radius: 20px;
+}
+
+/* ---------- navigation ---------- */
+
+.navbar {
+  background: rgba(255, 255, 255, 0.82);
+  border-bottom: 1px solid rgba(4, 69, 89, 0.08);
+  box-shadow: 0 6px 24px rgba(4, 69, 89, 0.05);
+}
+
+.logo-button {
+  padding: 6px 10px;
+  border-radius: 999px;
+  transition: background 0.2s ease;
+}
+.logo-button:hover {
+  background: var(--moss-pale);
+}
+.logo-button img {
+  filter: drop-shadow(0 2px 4px rgba(4, 69, 89, 0.2));
+}
+
+#navigation button {
+  border-radius: 999px;
+  padding: 9px 18px;
+  letter-spacing: 0.01em;
+}
+#navigation button:hover {
+  background: var(--moss-pale);
+}
+#navigation button.active {
+  background: var(--moss);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(4, 69, 89, 0.28);
+}
+
+/* ---------- buttons ---------- */
+
+.primary-button {
+  background: linear-gradient(135deg, var(--clay) 0%, var(--moss) 100%);
+  box-shadow: 0 6px 16px rgba(4, 69, 89, 0.28);
+}
+.primary-button:hover {
+  background: linear-gradient(135deg, var(--clay-deep) 0%, var(--moss-deep) 100%);
+  box-shadow: 0 10px 22px rgba(4, 69, 89, 0.32);
+}
+.secondary-button,
+.outline-button {
+  border-radius: 999px;
+}
+
+/* ---------- home hero ---------- */
+
+.home-page {
+  background:
+    radial-gradient(900px 500px at 85% 15%, rgba(120, 200, 225, 0.28), transparent 65%),
+    linear-gradient(
+      118deg,
+      rgba(2, 41, 58, 0.9) 0%,
+      rgba(4, 69, 89, 0.78) 45%,
+      rgba(31, 90, 108, 0.5) 100%
+    ),
+    url("asset/bg1.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+
+.home-content .eyebrow {
+  align-self: flex-start;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.home-content h1 {
+  max-width: 720px;
+  letter-spacing: -0.03em;
+  text-shadow: 0 6px 30px rgba(2, 41, 58, 0.45);
+}
+
+.home-content .home-description {
+  max-width: 600px;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 2px 14px rgba(2, 41, 58, 0.4);
+}
+
+/* the one orchestrated entrance on the page */
+.home-content > * {
+  animation: hero-rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.home-content > :nth-child(2) { animation-delay: 0.08s; }
+.home-content > :nth-child(3) { animation-delay: 0.16s; }
+.home-content > :nth-child(4) { animation-delay: 0.24s; }
+
+@keyframes hero-rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.home-buttons .primary-button {
+  background: #fff;
+  color: var(--moss-deep);
+  box-shadow: 0 10px 26px rgba(2, 41, 58, 0.35);
+}
+.home-buttons .primary-button:hover {
+  background: var(--sky-pale);
+}
+.home-buttons .secondary-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  color: #fff;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.home-buttons .secondary-button:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: #fff;
+}
+
+/* feature cards: frosted glass */
+.home-feature {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius-m);
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0.06)
+  );
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  box-shadow: 0 10px 30px rgba(2, 41, 58, 0.25);
+}
+.home-feature:hover {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.28),
+    rgba(255, 255, 255, 0.12)
+  );
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 16px 38px rgba(2, 41, 58, 0.32);
+}
+.home-feature > span {
+  background: #fff;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.18);
+}
+.home-feature h3 {
+  font-size: 17px;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.home-feature p {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* ---------- inner pages: soft blue-white backdrops ---------- */
+
+#page-study-stress,
+#page-stress-relief,
+#page-calm-zone,
+#page-help-support {
+  background:
+    radial-gradient(900px 420px at 100% 0%, rgba(46, 124, 147, 0.14), transparent 60%),
+    radial-gradient(700px 380px at 0% 40%, rgba(4, 69, 89, 0.07), transparent 60%),
+    linear-gradient(rgba(240, 246, 248, 0.94), rgba(240, 246, 248, 0.94)),
+    url("asset/bg1.jpg") center / cover no-repeat;
+}
+
+.page-introduction h1,
+.calm-introduction h1 {
+  color: var(--moss-deep);
+  font-weight: 600;
+}
+
+.page-introduction > p:last-child,
+.calm-introduction p:last-child {
+  max-width: 62ch;
+  line-height: 1.7;
+}
+
+/* ---------- about page: accordion cards ---------- */
+
+.wellness-list {
+  gap: 14px;
+  border-top: none;
+}
+
+.wellness-entry {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 8px rgba(4, 69, 89, 0.04);
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+.wellness-entry:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-soft);
+}
+.wellness-entry[open] {
+  border-color: var(--clay);
+  box-shadow: var(--shadow-soft);
+}
+
+.wellness-entry summary {
+  padding: 20px 22px;
+}
+.wellness-entry[open] summary {
+  background: linear-gradient(90deg, var(--moss-pale), transparent 80%);
+  border-bottom: 1px solid var(--line);
+}
+
+.wellness-entry-icon {
+  border-radius: 50%;
+  background: var(--moss-pale);
+}
+
+.wellness-entry-arrow {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--sky-pale);
+}
+.wellness-entry[open] .wellness-entry-arrow {
+  background: var(--moss);
+  color: #fff;
+}
+
+.wellness-entry-body {
+  max-width: none;
+  padding: 22px 26px 30px;
+}
+
+.wellness-field {
+  margin-bottom: 18px;
+}
+.wellness-field h1 {
+  margin: 14px 0 4px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--sky);
+  font-size: 1.45rem;
+  color: var(--moss-deep);
+}
+.wellness-field h2 {
+  position: relative;
+  margin: 8px 0 4px;
+  padding-left: 14px;
+  font-size: 1.15rem;
+  color: var(--moss);
+}
+.wellness-field h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  bottom: 0.2em;
+  width: 4px;
+  border-radius: 4px;
+  background: linear-gradient(var(--clay), var(--moss));
+}
+.wellness-field h3 {
+  margin-bottom: 4px;
+  font-size: 1rem;
+  color: var(--ink);
+}
+.wellness-field h3 + p,
+.wellness-field h3 + ul {
+  margin-top: 2px;
+}
+.wellness-entry-body li::marker {
+  color: var(--clay);
+}
+
+/* ---------- activities ---------- */
+
+.activity-grid {
+  gap: 26px;
+}
+
+.activity-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-l);
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+.activity-card:hover {
+  border-color: var(--clay);
+  box-shadow: var(--shadow-lift);
+}
+
+.activity-card-image {
+  position: relative;
+}
+.activity-card-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(2, 41, 58, 0.35));
+  pointer-events: none;
+}
+
+.activity-card-content h2 {
+  color: var(--moss-deep);
+}
+.activity-card-content p {
+  color: var(--muted);
+}
+
+.activity-card-link {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--moss-pale);
+  color: var(--moss-deep);
+  font-size: 0.82rem;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+.activity-card:hover .activity-card-link {
+  background: var(--moss);
+  color: #fff;
+}
+
+/* modal */
+.activity-modal {
+  background: rgba(2, 41, 58, 0.62);
+}
+.activity-modal-card {
+  border-radius: 28px;
+}
+.activity-modal-meta > div {
+  background: var(--sky-pale);
+  border: 1px solid var(--line);
+}
+.activity-modal-meta span {
+  color: var(--clay-deep);
+}
+.activity-modal-meta strong {
+  color: var(--moss-deep);
+}
+.activity-modal-details {
+  border-top: 1px solid var(--line);
+}
+.activity-modal-details h3 {
+  color: var(--moss-deep);
+}
+
+/* ---------- milestones ---------- */
+
+.milestone-stat {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-soft);
+}
+.milestone-stat::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--moss), var(--clay));
+}
+.milestone-stat strong {
+  background: linear-gradient(135deg, var(--moss), var(--clay));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.milestone-group-title {
+  position: relative;
+  border-bottom: 1px solid var(--line);
+  color: var(--moss-deep);
+}
+.milestone-group-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 72px;
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--moss), var(--clay));
+}
+
+.milestone-card {
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-soft);
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+.milestone-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-lift);
+}
+.milestone-card h3 {
+  color: var(--moss-deep);
+}
+.milestone-card h4 {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--sky-pale);
+}
+
+.award-list li {
+  border-top: 1px dashed var(--line);
+}
+.award-list li:last-child {
+  border-bottom: 1px dashed var(--line);
+}
+
+.place {
+  background: var(--sky-pale);
+  color: var(--moss-deep);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+.place-1 { background: linear-gradient(135deg, #fbefc4, #f2d98a); color: #5c4200; box-shadow: none; }
+.place-2 { background: linear-gradient(135deg, #eef3f5, #d5dfe3); color: #34484f; box-shadow: none; }
+.place-3 { background: linear-gradient(135deg, #f7e2cf, #e8c1a0); color: #6b3f1b; box-shadow: none; }
+
+.milestone-card details {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-s);
+  background: var(--paper);
+}
+.milestone-card summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--moss);
+}
+.milestone-card details[open] summary {
+  margin-bottom: 8px;
+}
+
+.pcmc-row {
+  border-radius: var(--radius-s);
+  background: var(--sky-pale);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.pcmc-row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(4, 69, 89, 0.1);
+}
+
+/* ---------- location ---------- */
+
+.location-map-card,
+.location-info {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-soft);
+}
+.location-map {
+  border-radius: 16px;
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+.location-info h2 {
+  color: var(--moss-deep);
+}
+.coord-row dd {
+  color: var(--moss);
+}
+
+/* ---------- contact ---------- */
+
+.contact-school {
+  border-radius: var(--radius-l);
+  background:
+    radial-gradient(420px 260px at 100% 0%, rgba(120, 200, 225, 0.4), transparent 60%),
+    radial-gradient(360px 240px at 0% 100%, rgba(46, 124, 147, 0.5), transparent 60%),
+    linear-gradient(160deg, var(--moss) 0%, var(--navy-night) 100%);
+  box-shadow: var(--shadow-lift);
+}
+.contact-school-logo {
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.15);
+}
+
+.contact-method {
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-soft);
+}
+.contact-method:hover {
+  border-color: var(--clay);
+  box-shadow: var(--shadow-lift);
+}
+.contact-method-icon {
+  background: linear-gradient(135deg, var(--moss-pale), var(--sky));
+}
+.contact-method:hover .contact-method-icon {
+  background: linear-gradient(135deg, var(--clay), var(--moss));
+}
+.contact-method:hover .contact-method-icon svg {
+  fill: #fff;
+}
+
+/* ---------- footer ---------- */
+
+footer {
+  position: relative;
+  background:
+    radial-gradient(700px 240px at 50% 0%, rgba(46, 124, 147, 0.35), transparent 70%),
+    linear-gradient(180deg, var(--moss-deep), var(--navy-night));
+}
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--clay), transparent);
+}
+footer strong {
+  letter-spacing: 0.01em;
+}
+.member {
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+.member:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- click ripple stays subtle ---------- */
+
+.click-ripple {
+  background: rgba(46, 124, 147, 0.18);
+  border-color: rgba(46, 124, 147, 0.4);
+}
+
+/* ---------- small screens ---------- */
+
+@media (max-width: 768px) {
+  .navbar {
+    background: rgba(255, 255, 255, 0.94);
+  }
+
+  #navigation {
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: var(--shadow-lift);
+  }
+
+  .wellness-entry summary {
+    padding: 16px;
+  }
+
+  .wellness-entry-body {
+    padding: 16px 16px 22px;
+  }
+
+  .activity-card,
+  .milestone-card,
+  .location-info,
+  .contact-school {
+    border-radius: var(--radius-m);
+  }
+}
